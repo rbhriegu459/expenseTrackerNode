@@ -44,16 +44,16 @@ app.post('/addExpense', (req, res) => {
   });
 });
 
-// app.delete('/:id', (req,res)=>{
+// app.post('/delete/:id', (req, res) => {
 //   const itemId = req.params.id;
-
-//   // Delete the item from the database
-//   connection.query('DELETE FROM your_table_name WHERE id = ?', [itemId], (err, results) => {
-//     if (err) throw err;
-//     console.log('Deleted ' + results.affectedRows + ' rows');
-//     res.redirect('/');
+  
+//   // Delete item from the database
+//   console.log(itemId);
+//   connection.query('DELETE FROM expenses WHERE id = ?', [itemId], (error) => {
+//       if (error) throw error;
+//       res.redirect('/');
 //   });
-// })
+// });
 
 // Start the server
 app.listen(port, () => {
